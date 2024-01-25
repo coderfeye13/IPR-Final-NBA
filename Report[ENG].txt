@@ -1,0 +1,99 @@
+Introduction:
+
+This project aims to analyze the games played in the American Basketball League (NBA) between 2016 and 2018.
+based on databases where various metrics are recorded. Data in the database is preprocessed 
+and data processing steps were applied. In this project, prediction of match scores 
+a classification performance was evaluated.
+
+Data:
+There are 4920 samples in total.
+Each sample contains 123 features. Therefore, each file contains a table with 4920 x 123 entries. 
+2460 samples were collected from 2016-2017 matches and 2460 samples were collected from 2017-2018 matches.
+The dataset is provided as 2016-2017.csv and 2017-2018.csv. The first line of the files contains the sample names
+while the other rows indicate that the metrics of the relevant instances have been collected.
+
+Objective:
+This project aims to achieve the highest percentage of correct classifications.
+For this purpose, the target variable was selected and predicted based on other metrics.
+Then the accuracy and cross-validation of various classification algorithms were calculated. 
+
+Classification Algorithms:
+
+- Random Forest 
+- SVC
+- KNeighbors 
+- Decision Tree 
+
+Performance Measures:
+Sensitivity, specificity and AUC were calculated as outputs of program performance.
+
+Sensitivity: = Number of correct predictions of the first class / Total number of samples in the first class
+
+Specificity = Number of correct guesses in the second class / Total number of samples in the second class
+
+AUC: Area under the ROC curve.
+
+*************************************************************************************
+
+Random Forest Classifier:
+
+Average Cross Validation Score: 1.0
+Accuracy: 1.0
+Precision: 1.0
+Recall (Sensitivity): 1.0
+F1 Score: 1.0
+AUC (Area under the ROC Curve): 1.0
+
+
+Analysis:
+
+The Random Forest Classifier model shows excellent performance. Cross-validation score, 
+accuracy, sensitivity, precision, sensitivity and F1 score are all 1.0. Furthermore, the area under the ROC curve
+(AUC) is also 1.0. The model learned the features in the dataset very well and successfully made predictions.
+
+Support Vector Classifier (SVC):
+
+Accuracy: 0.9888211382113821
+Precision: 0.9919517102615694
+Recall (Sensitivity): 0.986
+F1 Score: 0.9889669007021062
+AUC (Area under the ROC Curve): 0.9994090909090909
+
+Analysis:
+
+The SVC model also shows very high performance. Accuracy, precision, sensitivity and F1 score 
+has high values. The AUC value of 0.9994 indicates that the area under the ROC curve is very high.
+
+K-Nearest Neighbors (KNN) Classifier:
+
+Accuracy: 0.9146341463414634
+Precision: 0.9176706827309237
+Recall (Sensitivity): 0.914
+F1 Score: 0.9158316633266533
+AUC (Area under the ROC Curve): 0.9684132231404958
+
+Analysis:
+
+The KNN model performs well, but with a lower accuracy than the Random Forest and SVC models 
+and other metrics. The AUC value of 0.9684 shows the classification ability of the model.
+
+Decision Tree Classifier:
+
+Accuracy: 1.0
+Precision: 1.0
+Recall (Sensitivity): 1.0
+F1 Score: 1.0
+AUC (Area under the ROC Curve): 1.0
+
+Analysis:
+
+The Decision Tree Classifier model achieved excellent performance in all performance metrics. Model, 
+completely learned the patterns in the dataset and made excellent predictions on the training set.
+
+
+
+Overall Analysis:
+
+All models perform well, but Random Forest and Decision 
+Tree Classifier models have arrived. These models learned the patterns in the dataset very well and were able to 
+set of successful forecasts.

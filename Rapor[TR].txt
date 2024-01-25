@@ -1,0 +1,100 @@
+Giriş:
+
+Bu proje, 2016-2018 yılları arasında Amerikan Basketbol Ligi (NBA)'nde oynanmış maçlarla ilgili
+çeşitli metriklerin kaydedildiği veritabanlarını temel alır. Veri tabanındaki veriler ön işleme 
+adımlarından geçirilip veri işleme adımları uygulanmıştır. Bu projede, maç skorlarının tahmini 
+üzerinden bir sınıflandırma performansı değerlendirilmiştir.
+
+Veri:
+Toplamda 4920 örnek bulunmaktadır.
+Her bir örnek 123 özellik içerir. Bu nedenle, her dosya 4920 x 123 girişli bir tablo içerir. 
+2460 örnek 2016-2017 yılı maçlarından, 2460 örnek ise 2017-2018 yılı maçlarından toplanmıştır.
+Veri seti 2016-2017.csv ve 2017-2018.csv adıyla sağlanmıştır. Dosyaların ilk satırı örnek adlarını
+içerirken, diğer satırlar ilgili örneklerin metriklerinin toplandığını gösterir.
+
+Hedef:
+Bu proje ile en yüksek doğru sınıflandırma yüzdesine ulaşılması beklenmektedir.
+Bu amaçla, hedef değişken seçilip diğer metrikler doğrultusunda tahmin edilmeye çalışılmıştır.
+Ardından çeşitli classification algoritmalarının doğrulukları ve çapraz doğrulamalası hesaplanmıştır. 
+
+Sınıflandırma Algoritmaları:
+
+- Random Forest 
+- SVC
+- KNeighbors 
+- Decision Tree 
+
+Performans Ölçütleri:
+Program performansının çıktısı olarak hassasiyet, özgüllük ve AUC hesaplanmıştır.
+
+Hassasiyet: = İlk sınıfın doğru tahmin sayısı / İlk sınıftaki toplam örnek sayısı
+
+Özgüllük: = İkinci sınıfın doğru tahmin sayısı / İkinci sınıftaki toplam örnek sayısı
+
+AUC: ROC eğrisi altındaki alan.
+
+*************************************************************************************
+
+Random Forest Classifier:
+
+Ortalama Çapraz Doğrulama Skoru: 1.0
+Accuracy: 1.0
+Precision: 1.0
+Recall (Sensitivity): 1.0
+F1 Score: 1.0
+AUC (Area under the ROC Curve): 1.0
+
+
+Analiz:
+
+Random Forest Classifier modeli mükemmel bir performans göstermektedir. Çapraz doğrulama skoru, 
+doğruluk, hassasiyet, duyarlılık ve F1 skoru tamamen 1.0'dir. Ayrıca, ROC eğrisi altındaki alan
+(AUC) da 1.0'dir. Model, veri setindeki özellikleri çok iyi öğrenmiş ve tahminlerini başarıyla gerçekleştirmiştir.
+
+Support Vector Classifier (SVC):
+
+Accuracy: 0.9888211382113821
+Precision: 0.9919517102615694
+Recall (Sensitivity): 0.986
+F1 Score: 0.9889669007021062
+AUC (Area under the ROC Curve): 0.9994090909090909
+
+Analiz:
+
+SVC modeli de oldukça yüksek performans sergilemektedir. Accuracy, hassasiyet, duyarlılık ve F1 skoru 
+yüksek değerlere sahiptir. AUC değeri 0.9994, ROC eğrisi altındaki alanın çok yüksek olduğunu göstermektedir.
+
+K-Nearest Neighbors (KNN) Classifier:
+
+Accuracy: 0.9146341463414634
+Precision: 0.9176706827309237
+Recall (Sensitivity): 0.914
+F1 Score: 0.9158316633266533
+AUC (Area under the ROC Curve): 0.9684132231404958
+
+Analiz:
+
+KNN modeli iyi bir performans sergilemektedir, ancak Random Forest ve SVC modellerinden daha düşük bir doğruluk 
+ve diğer metriklere sahiptir. AUC değeri 0.9684, modelin sınıflandırma yeteneğini göstermektedir.
+
+Decision Tree Classifier:
+
+Accuracy: 1.0
+Precision: 1.0
+Recall (Sensitivity): 1.0
+F1 Score: 1.0
+AUC (Area under the ROC Curve): 1.0
+
+Analiz:
+
+Decision Tree Classifier modeli, tüm performans metriklerinde mükemmel bir başarı elde etmiştir. Model, 
+veri setindeki  desenleri tamamen öğrenmiş ve eğitim seti üzerinde mükemmel tahminler yapmıştır.
+
+
+
+Genel Analiz:
+
+Tüm modeller yüksek performans sergilemektedir, ancak en yüksek başarıya Random Forest ve Decision 
+Tree Classifier modelleri ulaşmıştır. Bu modeller, veri setindeki desenleri çok iyi öğrenmiş ve test 
+setinde başarılı tahminler yapmışlardır.
+
