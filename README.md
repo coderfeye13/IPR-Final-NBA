@@ -2,7 +2,7 @@
 
 # IPR-Final
 
-![alt text](https://github.com/coderfeye13/IPR-Final/blob/main/nbalogo.jpeg?raw=true)
+![alt text](https://github.com/coderfeye13/IPR-Final-NBA/blob/main/nbalogo.jpeg?raw=true)
 
 
 Introduction:
