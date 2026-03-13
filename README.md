@@ -1,41 +1,137 @@
-# IPR-Final-NBA
+# NBA Game Outcome Prediction
 
-# IPR-Final
+![NBA](./nbalogo.jpeg)
 
-![alt text](https://github.com/coderfeye13/IPR-Final-NBA/blob/main/nbalogo.jpeg?raw=true)
+This project explores whether **NBA game outcomes** can be predicted using historical team statistics.
 
+The project was developed as the **final project for the Introduction to Pattern Recognition course** during my **Bachelor's degree in Computer Engineering at Erciyes University**.
 
-Introduction:
+The goal was to apply machine learning algorithms to sports analytics data and evaluate how well game results can be predicted based on statistical metrics.
 
-This project aims to analyze the games played in the American Basketball League (NBA) between 2016 and 2018.
-based on databases where various metrics are recorded. Data in the database is preprocessed 
-and data processing steps were applied. In this project, the prediction of match scores 
-a classification performance was evaluated.
+---
 
-Data:
-There are 4920 samples in total.
-Each sample contains 123 features. Therefore, each file contains a table with 4920 x 123 entries. 
-2460 samples were collected from 2016-2017 matches and 2460 samples were collected from 2017-2018 matches.
-The dataset is provided as 2016-2017.csv and 2017-2018.csv. The first line of the files contains the sample names
-while the other rows indicate that the metrics of the relevant instances have been collected.
+## Project Overview
 
-Objective:
-This project aims to achieve the highest percentage of correct classifications.
-For this purpose, the target variable was selected and predicted based on other metrics.
-Then the accuracy and cross-validation of various classification algorithms were calculated. 
+Using NBA match statistics from multiple seasons, the project attempts to predict game outcomes using a classification approach.
 
-Classification Algorithms:
+Each game is represented by a set of statistical features describing team performance during the match.
 
-- Random Forest 
-- SVC
-- KNeighbors 
-- Decision Tree 
+The model attempts to classify game results based on these features.
 
-Performance Measures:
-Sensitivity, specificity and AUC were calculated as outputs of program performance.
+---
 
-Sensitivity: = Number of correct predictions of the first class / Total number of samples in the first class
+## Dataset
 
-Specificity = Number of correct guesses in the second class / Total number of samples in the second class
+The dataset contains NBA game statistics from two seasons:
 
-AUC: Area under the ROC curve.
+- 2016–2017
+- 2017–2018
+
+Files included in the repository:
+
+- `2016-17_teamBoxScore.csv`
+- `2017-18_teamBoxScore.csv`
+
+Dataset characteristics:
+
+- **4920 samples**
+- **123 features per sample**
+
+The features include various team performance metrics recorded during NBA games.
+
+---
+
+## Machine Learning Workflow
+
+The following steps were applied in the project:
+
+1. Data loading and preprocessing  
+2. Feature selection  
+3. Dataset preparation  
+4. Model training  
+5. Cross-validation  
+6. Model evaluation  
+
+The workflow is implemented in:
+
+`main.ipynb`
+
+---
+
+## Classification Algorithms
+
+Several machine learning algorithms were evaluated:
+
+- Random Forest
+- Support Vector Classifier (SVC)
+- K-Nearest Neighbors
+- Decision Tree
+
+These models were trained and compared based on their classification performance.
+
+---
+
+## Performance Evaluation
+
+The models were evaluated using the following metrics:
+
+- Sensitivity
+- Specificity
+- AUC (Area Under ROC Curve)
+
+### Metric Definitions
+
+**Sensitivity**
+
+Correct predictions for class 1 divided by total samples in class 1.
+
+**Specificity**
+
+Correct predictions for class 2 divided by total samples in class 2.
+
+**AUC**
+
+Area under the ROC curve.
+
+---
+
+## Project Structure
+
+    IPR-Final-NBA
+    ├── main.ipynb
+    ├── 2016-17_teamBoxScore.csv
+    ├── 2017-18_teamBoxScore.csv
+    ├── IPR_final.pdf
+    ├── Report[ENG].txt
+    ├── Rapor[TR].txt
+    ├── nbalogo.jpeg
+    └── README.md
+
+---
+
+## Technologies Used
+
+- Python
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Scikit-learn
+
+---
+
+## Development Context
+
+This project was developed as part of the **Introduction to Pattern Recognition course**.
+
+The objective was to build a machine learning pipeline using real-world sports data and evaluate classification algorithms.
+
+---
+
+## Author
+
+**Furkan Yilmaz**
+
+Developed during my **Bachelor's degree in Computer Engineering at Erciyes University**.
+
+Currently pursuing an **M.Sc. in Computer Science at HAW Kiel University of Applied Sciences (Germany)**.
+
